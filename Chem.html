@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Calculations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Chemistry Work Calculator</h1>
+    </header>
+    <div class="container">
+        <div class="calculator">
+            <h2>Molarity Calculation</h2>
+            <label for="moles">Moles of Solute:</label>
+            <input type="number" id="moles" step="any" placeholder="Enter moles">
+            <label for="volume">Volume of Solution (L):</label>
+            <input type="number" id="volume" step="any" placeholder="Enter volume in liters">
+            <button onclick="calculateMolarity()">Calculate Molarity</button>
+            <p id="molarityResult"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>Molality Calculation</h2>
+            <label for="molalityMoles">Moles of Solute:</label>
+            <input type="number" id="molalityMoles" step="any" placeholder="Enter moles">
+            <label for="solventMass">Mass of Solvent (kg):</label>
+            <input type="number" id="solventMass" step="any" placeholder="Enter mass in kilograms">
+            <button onclick="calculateMolality()">Calculate Molality</button>
+            <p id="molalityResult"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>Percentage of Elements in a Compound</h2>
+            <label for="elementMass">Mass of Element (g):</label>
+            <input type="number" id="elementMass" step="any" placeholder="Enter element mass">
+            <label for="compoundMass">Total Mass of Compound (g):</label>
+            <input type="number" id="compoundMass" step="any" placeholder="Enter compound mass">
+            <button onclick="calculatePercentage()">Calculate Percentage</button>
+            <p id="percentageResult"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>d-Orbital Geometry Prediction</h2>
+            <label for="ligandNumber">Number of Ligands:</label>
+            <input type="number" id="ligandNumber" placeholder="Enter number of ligands">
+            <button onclick="predictGeometry()">Predict Geometry</button>
+            <p id="geometryResult"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chemistry Work Calculator | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
